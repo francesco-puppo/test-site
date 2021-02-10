@@ -1,0 +1,114 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin:0;
+}
+
+section {
+    padding: 40px;
+}
+
+.hero {
+    min-height: 250px;
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.blogenium.com%2Fwp-content%2Fuploads%2F2019%2F09%2FBlogenium-Miscellaneous-4K-Wallpapers-11.jpg");
+    background-size: cover;
+}
+
+.hero .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .container * {
+    text-align: center;
+    transition:all 0.5s ease-in-out;
+
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    margin-top:0px;
+    
+}
+
+.hero p {
+    font-style: italic;
+}
+
+.btn {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    text-align: center;
+    align-items: flex-start;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    padding: 0.5em 1em;
+    border-width: 0px;
+    border-style: none;
+    border-radius: 50px;
+    text-decoration: none;
+    margin-top: 1em;
+    transition:all 0.5s ease-in-out;
+}
+
+.btn:hover {
+    background-color: indianred;
+}
+
+.btn.two {
+    background: indianred;
+    color: white;
+    border: solid 1px indianred;
+}
+
+.btn.two:hover {
+    color: white;
+    background:black;
+}
+
+section {
+    height: 100vh;
+    min-height: 50vh;
+    width: 50vw;
+}
+
+.btn.sticky {
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+}
+
+.box {
+    display:flex;
+}
+
+@media only screen and (max-width: 600px) {
+    .hero .container {
+        align-items: flex-start;
+    }
+    .hero h1 {
+        font-size: 2.5em;
+    }
+    .btn.sticky {
+        position: fixed;
+        bottom: 0;
+        right:0;
+        width: 100%;
+        border-radius: 0%;
+        padding: 1em;
+    }
+    .box {
+       flex-direction: column;
+    }
+    section {
+        height: auto;
+        width: 100vw;
+    }
+}
